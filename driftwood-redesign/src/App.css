@@ -1,0 +1,284 @@
+.App {
+  text-align: center;
+  width: 100%;
+  background-image: url("./img/brown-close-up-hd-wallpaper-172289.jpg");
+  background-size: cover;
+  font-family: 'Lora', serif;
+  color: #120C16;
+}
+
+.mainContent {
+  box-shadow: 5px 5px 15px #000c
+
+}
+
+/*----------HEADER----------*/
+
+.Header {
+  background-image: url("./img/grapes.jpg");
+  height:300px;
+  width: 80%;
+  margin: 52px 0px 0px 10%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 15px #000c;
+  display: flex;
+  align-items: center;
+}
+
+.logoBanner > hr {
+  width: 33%
+}
+
+.headerLogo{
+  height: 100px;
+}
+
+.logoBanner{
+  background-color: #000b;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 5px 15px #000, 0px -5px 15px #000;
+}
+
+.logoBanner > img {
+  height: 100px;
+}
+/*----------NAVBAR----------*/
+
+.Navbar{
+  display: flex;
+  position: fixed;
+  top:0;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  background-color: #120C16;
+}
+
+.brand{
+  font-family: 'Cormorant SC', serif;
+  font-size: 1.75em;
+  text-decoration: none;
+}
+
+.navBrand > *{
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.footerbrand {
+  color: #120C16;
+
+}
+
+.Navbar > *{
+ display: flex;
+}
+
+.headerLinks > *{
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: lighter;
+  color: white;
+}
+
+.headerLinks > *:hover, .navBrand > *:hover{
+  color: #F9D983;
+}
+
+/*----------MAIN CONTENT----------*/
+
+.mainContent{
+  width: 80%;
+  margin-left: 10%;
+  background-color: #fffe;
+  padding-top: 55px;
+}
+
+/* ----------HOME PAGE---------- */
+
+.Home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutDriftwood {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutDriftwood > div {
+  width: 40%;
+}
+
+.comeVisit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapouter{
+  text-align: right;
+  height:433px;
+  width: 700px;
+  margin-right: 0px;
+  margin-bottom: 1.5em;
+}
+
+.paper > * {
+  width: 90%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 433px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.visitorInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around
+}
+
+.visitorInfo > div {
+  width: 40%;
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+footer {
+  width: 80%;
+  margin-left: 10%;
+  height: 52px;
+  background-color: #fffe;
+  padding-top: 15px;
+}
+
+/* ----------WINE LIST---------- */
+
+  .Wine {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5em;
+  }
+
+  .wineCaption {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1.5em;
+    align-content: flex-start
+  }
+
+  .wineCaption > hr {
+    width: 95%;
+    margin: 0px;
+  }
+
+  .wineCaption > strong {
+    font-weight: bolder;
+  }
+
+  .Wines {
+    padding-bottom: 1.5em;
+  }
+
+  .Wines > hr {
+    width: 90%;
+    margin-bottom: 2.5em;
+  }
+
+/* ----------RULEZ ---------- */
+.Rules {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.Rules > hr {
+  margin-bottom: 2.5em;
+}
+
+.rulesGrid > div > * {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.rulesGrid > div > ul {
+  width: 90%;
+  margin-left: 0px;
+}
+
+.rulesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+  text-align: left;
+  grid-auto-flow: column;
+}
+
+.genPol {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.largeGroups  {
+  grid-column: 1/3;
+}
+
+.alcoholPolicy {
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+/* ----------WINE CLUB---------- */
+
+.WineClub {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  grid-gap: 3em;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.wineclubHeader{
+  grid-column: 1/3;
+}
+
+.WineClub > .clubBenefits {
+  text-align: left;
+}
+
+#clubDates {
+  text-align: left;
+}
+
+#clubDates > tr {
+  height: 2.5em;
+}
+
+#clubDates > tr > td {
+  width: 38%;
+}
+
+
